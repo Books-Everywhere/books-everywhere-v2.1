@@ -1,6 +1,6 @@
 namespace BooksEverywhere.Models
 {
-  public class BookPresentation
+    public class BookPresentation
     {
         public Book Book { get; set; }
         public string Synopsis { get; set; }

@@ -2,8 +2,8 @@ using System;
 
 namespace BooksEverywhere.Models
 {
-  public class UserProfile
-  {
+    public class UserProfile
+    {
         public User User { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
