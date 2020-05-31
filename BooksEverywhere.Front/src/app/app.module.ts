@@ -10,7 +10,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PublicComponent } from './public/public.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,10 +24,12 @@ import { PublicComponent } from './public/public.component';
     MatCheckboxModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSidenavModule
-    // HttpClientModule
+    MatSidenavModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

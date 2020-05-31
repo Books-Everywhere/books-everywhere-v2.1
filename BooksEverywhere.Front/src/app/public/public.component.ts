@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { User } from '../models/user';
 import { UserService } from '../services/user.service';
+import { Helpers } from '../helpers/helpers';
+import { Router } from '@angular/router';
+import { TokenService } from '../services/token.service';
 
 @Component({
   selector: 'app-public',
@@ -11,8 +14,8 @@ export class PublicComponent implements OnInit {
 
   user = new User();
   rForm: FormGroup;
-  
-  constructor(private userService: UserService) {
+
+  constructor(private userService: UserService, private helpers: Helpers, private router: Router, private tokenService: TokenService) {
   }
 
   ngOnInit() {
@@ -38,6 +41,19 @@ export class PublicComponent implements OnInit {
       this.userService.create(this.user);
     }
   }
+
+  // login in progress 
+  login(): void {
+    let authValues = { "Username": this.user.username, "Password": this.user.password };
+    this.tokenService.auth(authValues).subscribe(token => {
+      this.helpers.setToken(token);
+      this.router.navigate(['/dashboard']);
+    });
+  }
+
+  // this is the logout:
+  // this.helpers.logout();
+  // this.router.navigate(['/login']);
 
   get name() {
     return this.rForm.get('nome');

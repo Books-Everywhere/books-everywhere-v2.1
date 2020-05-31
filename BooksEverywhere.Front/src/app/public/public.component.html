@@ -965,7 +965,7 @@
 </div>
 <!-- Client Section End -->
 
-<!-- Contact Section Start -->
+<!-- Register Section Start -->
 <section id="contact" class="section">
   <div class="contact-form">
     <div class="container">
@@ -977,10 +977,10 @@
       <div class="row">
         <div class="col-lg-9 col-md-9 col-xs-12">
           <div class="contact-block">
-            <form id="contactForm">
+            <form id="contactForm" [formGroup]="rForm">
               <div class="row">
                 <div class="col-md-6">
-                  <div class="form-group" [formGroup]="rForm">
+                  <div class="form-group" >
                     <input type="text" class="form-control" id="name" name="name" placeholder="Seu Nome" required
                       data-error="Por favor, digite seu nome." formControlName="nome" [inputValue]="user.name">
                     <div class="help-block with-errors"></div>
