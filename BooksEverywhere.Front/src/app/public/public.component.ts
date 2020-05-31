@@ -20,7 +20,6 @@ export class PublicComponent implements OnInit {
 
   ngOnInit() {
     this.rForm = new FormGroup({
-      name: new FormControl(this.user.name),
       email: new FormControl(this.user.email),
       username: new FormControl(this.user.username),
       password: new FormControl(this.user.password)
@@ -30,7 +29,6 @@ export class PublicComponent implements OnInit {
   create(): void {
     if (this.rForm.invalid) return;
 
-    this.user.name = this.name.value;
     this.user.email = this.email.value;
     this.user.username = this.username.value;
     this.user.password = this.password.value;
@@ -55,10 +53,6 @@ export class PublicComponent implements OnInit {
   // this.helpers.logout();
   // this.router.navigate(['/login']);
 
-  get name() {
-    return this.rForm.get('nome');
-  }
-
   get email() {
     return this.rForm.get('email');
   }
@@ -69,9 +63,5 @@ export class PublicComponent implements OnInit {
 
   get password() {
     return this.rForm.get('password');
-  }
-
-  get unidades() {
-    return this.rForm.get('unidades');
   }
 }

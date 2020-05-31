@@ -14,3 +14,4 @@ D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Models\obj\Debug\netcoreapp2.1
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Models\obj\Debug\netcoreapp2.1\BooksEverywhere.Models.csproj.CoreCompileInputs.cache
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Models\obj\Debug\netcoreapp2.1\BooksEverywhere.Models.dll
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Models\obj\Debug\netcoreapp2.1\BooksEverywhere.Models.pdb
+D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Models\obj\Debug\netcoreapp2.1\BooksEverywhere.Models.csprojAssemblyReference.cache
