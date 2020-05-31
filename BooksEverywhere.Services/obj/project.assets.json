@@ -5277,11 +5277,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
+      "projectUniqueName": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
       "projectName": "BooksEverywhere.Services",
-      "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
+      "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Services\\obj\\",
+      "outputPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5300,11 +5300,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
-              "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj"
+            "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
+              "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj"
             },
-            "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj": {
-              "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj"
+            "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj": {
+              "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj"
             }
           }
         }

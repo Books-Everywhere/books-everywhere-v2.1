@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8lub0njr15L9dzAnRa860ivv8ZW72HH0l/S2g6lVbvRQ2k5WxOnaAWmhAqU+lJKLkj5ergLu1wq0hxWt9GksoQ==",
+  "dgSpecHash": "jKYeduHxPtUxhnLYw4MFkXGDoeD7Ggr58VKBi9x9JlvoDHrffrkGgyG7uHZk2O5aCCe+HR4+EWWU+3tBs53jTA==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Web.Api\\BooksEverywhere.Web.Api.csproj",
+  "projectFilePath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Web.Api\\BooksEverywhere.Web.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\antlr3.runtime\\3.5.1\\antlr3.runtime.3.5.1.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",

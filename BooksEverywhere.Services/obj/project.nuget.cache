@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OewL/wCJ6N4tS2v8BulG6oxeBIfSHyK8b5HomoORsNIrkwW2mkCCSKzAP49kfgFMOQFPdVGiqwo+4gPBPUV2/w==",
+  "dgSpecHash": "mjDuz2T/nuTrr+yRFKlfh/IqgkYiCCQjCwmoUyM+O7bfuRkDORDnqXvfr5n41sVnEfZXiI+iHxA84Qe4Zpxm7w==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
+  "projectFilePath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.0.3\\microsoft.aspnetcore.authentication.2.0.3.nupkg.sha512",

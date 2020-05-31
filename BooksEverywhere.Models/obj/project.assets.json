@@ -5192,11 +5192,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj",
+      "projectUniqueName": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj",
       "projectName": "BooksEverywhere.Models",
-      "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj",
+      "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\obj\\",
+      "outputPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Web.Api\\BooksEverywhere.Web.Api.csproj": {}
+    "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Web.Api\\BooksEverywhere.Web.Api.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
+    "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj",
+        "projectUniqueName": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj",
         "projectName": "BooksEverywhere.Models",
-        "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj",
+        "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\obj\\",
+        "outputPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -74,14 +74,14 @@
         }
       }
     },
-    "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj": {
+    "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj",
+        "projectUniqueName": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj",
         "projectName": "BooksEverywhere.Repositories",
-        "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj",
+        "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Repositories\\obj\\",
+        "outputPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -100,8 +100,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
-                "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj"
+              "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
+                "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj"
               }
             }
           }
@@ -148,14 +148,14 @@
         }
       }
     },
-    "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj": {
+    "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
+        "projectUniqueName": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
         "projectName": "BooksEverywhere.Services",
-        "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
+        "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Services\\obj\\",
+        "outputPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -174,11 +174,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
-                "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj"
+              "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
+                "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj"
               },
-              "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj": {
-                "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj"
+              "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj": {
+                "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj"
               }
             }
           }
@@ -217,14 +217,14 @@
         }
       }
     },
-    "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj": {
+    "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj",
+        "projectUniqueName": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj",
         "projectName": "BooksEverywhere.ViewModels",
-        "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj",
+        "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.ViewModels\\obj\\",
+        "outputPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -243,8 +243,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
-                "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj"
+              "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
+                "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj"
               }
             }
           }
@@ -283,14 +283,14 @@
         }
       }
     },
-    "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Web.Api\\BooksEverywhere.Web.Api.csproj": {
+    "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Web.Api\\BooksEverywhere.Web.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Web.Api\\BooksEverywhere.Web.Api.csproj",
+        "projectUniqueName": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Web.Api\\BooksEverywhere.Web.Api.csproj",
         "projectName": "BooksEverywhere.Web.Api",
-        "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Web.Api\\BooksEverywhere.Web.Api.csproj",
+        "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Web.Api\\BooksEverywhere.Web.Api.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Web.Api\\obj\\",
+        "outputPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Web.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -309,14 +309,14 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj": {
-                "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj"
+              "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj": {
+                "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj"
               },
-              "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj": {
-                "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj"
+              "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj": {
+                "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj"
               },
-              "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj": {
-                "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj"
+              "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj": {
+                "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj"
               }
             }
           }

@@ -11886,11 +11886,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Front\\BooksEverywhere.Front.csproj",
+      "projectUniqueName": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Front\\BooksEverywhere.Front.csproj",
       "projectName": "BooksEverywhere.Front",
-      "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Front\\BooksEverywhere.Front.csproj",
+      "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Front\\BooksEverywhere.Front.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Front\\obj\\",
+      "outputPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Front\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

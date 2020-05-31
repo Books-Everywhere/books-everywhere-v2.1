@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fMyKpubFxYZxk9WD6qv0L4+pqjUYP1MFZUQjdokLM0CpX7yqS0yfSCxmraf/Jw7/YfuhIQWJlcB/YvPtuF/b4A==",
+  "dgSpecHash": "k0weY6AceGTbBZ0oe0YOYPM8skiCFpHDcIGvA6qPTj3qDbQqRN18miTsU6VcvZWqlvsjUeaGYWh6FJPMTqbU2A==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj",
+  "projectFilePath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.0.3\\microsoft.aspnetcore.authentication.2.0.3.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.0.2\\microsoft.aspnetcore.authentication.abstractions.2.0.2.nupkg.sha512",

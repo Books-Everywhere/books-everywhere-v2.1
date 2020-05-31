@@ -5528,11 +5528,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj",
+      "projectUniqueName": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj",
       "projectName": "BooksEverywhere.Repositories",
-      "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj",
+      "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Repositories\\obj\\",
+      "outputPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5551,8 +5551,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
-              "projectPath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj"
+            "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
+              "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj"
             }
           }
         }

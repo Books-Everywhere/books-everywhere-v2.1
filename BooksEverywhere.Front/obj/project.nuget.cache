@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F7lB2QvyCwaTDCi8feIEUGfmQikoahmTANZ3AaPcAlDO4Hq5fyMSJ0EPoJc52VrImc/B7F1viX2VnbPzw1CSgg==",
+  "dgSpecHash": "5xx0RW0h+UwrYGq6uUETLBdgaus8mEeIrHSoKJT0jXA96nAvIU8XZzkik2oh8k/ABJV4c2mWaudXDQzB6qm3nA==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Front\\BooksEverywhere.Front.csproj",
+  "projectFilePath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Front\\BooksEverywhere.Front.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",

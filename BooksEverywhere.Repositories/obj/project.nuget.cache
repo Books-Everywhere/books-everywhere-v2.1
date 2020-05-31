@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vH2VuKrhcvaFZJzZFVGJ8cD2/vL2zNkyLCseQgLLV7bkJ3zshq6ff6FDuxg5E3HgTi03abubsNjTamKR4BjRXg==",
+  "dgSpecHash": "jWnl3KoPsynxdZPmZiClosvmoBluBkPT0qxf/gmRCaXluDyXjWzw1C7w8Sf+SlB9rumoW7g23EVfphmWdomE3A==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\books-everywhere-v2\\BooksEverywhere\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj",
+  "projectFilePath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Repositories\\BooksEverywhere.Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\antlr3.runtime\\3.5.1\\antlr3.runtime.3.5.1.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\fluentnhibernate\\2.1.2\\fluentnhibernate.2.1.2.nupkg.sha512",
