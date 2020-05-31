@@ -1,0 +1,11 @@
+D:\Projetos\books-everywhere-v2\BooksEverywhere\BooksEverywhere.Repositories\bin\Debug\netcoreapp2.1\BooksEverywhere.Repositories.deps.json
+D:\Projetos\books-everywhere-v2\BooksEverywhere\BooksEverywhere.Repositories\bin\Debug\netcoreapp2.1\BooksEverywhere.Repositories.dll
+D:\Projetos\books-everywhere-v2\BooksEverywhere\BooksEverywhere.Repositories\bin\Debug\netcoreapp2.1\BooksEverywhere.Repositories.pdb
+D:\Projetos\books-everywhere-v2\BooksEverywhere\BooksEverywhere.Repositories\bin\Debug\netcoreapp2.1\BooksEverywhere.Models.dll
+D:\Projetos\books-everywhere-v2\BooksEverywhere\BooksEverywhere.Repositories\bin\Debug\netcoreapp2.1\BooksEverywhere.Models.pdb
+D:\Projetos\books-everywhere-v2\BooksEverywhere\BooksEverywhere.Repositories\obj\Debug\netcoreapp2.1\BooksEverywhere.Repositories.AssemblyInfoInputs.cache
+D:\Projetos\books-everywhere-v2\BooksEverywhere\BooksEverywhere.Repositories\obj\Debug\netcoreapp2.1\BooksEverywhere.Repositories.AssemblyInfo.cs
+D:\Projetos\books-everywhere-v2\BooksEverywhere\BooksEverywhere.Repositories\obj\Debug\netcoreapp2.1\BooksEverywhere.Repositories.csproj.CoreCompileInputs.cache
+D:\Projetos\books-everywhere-v2\BooksEverywhere\BooksEverywhere.Repositories\obj\Debug\netcoreapp2.1\BooksEverywhere.Repositories.csproj.CopyComplete
+D:\Projetos\books-everywhere-v2\BooksEverywhere\BooksEverywhere.Repositories\obj\Debug\netcoreapp2.1\BooksEverywhere.Repositories.dll
+D:\Projetos\books-everywhere-v2\BooksEverywhere\BooksEverywhere.Repositories\obj\Debug\netcoreapp2.1\BooksEverywhere.Repositories.pdb

@@ -1,0 +1,5 @@
+D:\Projetos\books-everywhere-v2\books-everywhere-v2\BooksEverywhere.Web.Api\BooksEverywhere.Repositories\bin\Debug\netcoreapp3.1\BooksEverywhere.Repositories.deps.json
+D:\Projetos\books-everywhere-v2\books-everywhere-v2\BooksEverywhere.Web.Api\BooksEverywhere.Repositories\bin\Debug\netcoreapp3.1\BooksEverywhere.Repositories.dll
+D:\Projetos\books-everywhere-v2\books-everywhere-v2\BooksEverywhere.Web.Api\BooksEverywhere.Repositories\obj\Debug\netcoreapp3.1\BooksEverywhere.Repositories.csprojAssemblyReference.cache
+D:\Projetos\books-everywhere-v2\books-everywhere-v2\BooksEverywhere.Web.Api\BooksEverywhere.Repositories\obj\Debug\netcoreapp3.1\BooksEverywhere.Repositories.AssemblyInfoInputs.cache
+D:\Projetos\books-everywhere-v2\books-everywhere-v2\BooksEverywhere.Web.Api\BooksEverywhere.Repositories\obj\Debug\netcoreapp3.1\BooksEverywhere.Repositories.AssemblyInfo.cs
