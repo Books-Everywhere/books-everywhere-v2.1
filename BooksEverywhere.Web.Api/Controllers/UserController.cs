@@ -4,13 +4,12 @@ using BooksEverywhere.ViewModels;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using static BooksEverywhere.Web.Api.Controllers.AccountController;
-using Microsoft.AspNetCore.Authorization;
 
 namespace BooksEverywhere.Web.Api.Controllers
 {
     [ApiController]
     [Route("api/user")]
-    public class UserController : ControllerBase
+    public class UserController : Controller
     {
         #region Imports
         private readonly IUserService _userService;

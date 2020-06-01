@@ -7,7 +7,11 @@ namespace BooksEverywhere.Models.ApplicationDbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql($"Server=localhost;Port=3306;Database=BooksEverywhere;user=root;password=lunashakira8;Pooling=true;");
+            // -> commands to create the migrations:
+            // dotnet ef migrations add InitialCreate
+            // dotnet ef database update
+            // 'ef migrations remove'
+            optionsBuilder.UseMySql($"Server=localhost;Port=3306;Database=books_everywhere;user=root;password=lunashakira8;Pooling=true;");
         }
     }
 }
