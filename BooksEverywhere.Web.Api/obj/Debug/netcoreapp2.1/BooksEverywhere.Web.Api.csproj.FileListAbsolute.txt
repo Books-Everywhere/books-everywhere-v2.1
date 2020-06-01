@@ -35,6 +35,7 @@ D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\BooksEverywhere.Repositories.dll
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\BooksEverywhere.Services.dll
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.dll
+D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\MySql.Data.dll
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\BooksEverywhere.Repositories.pdb
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\BooksEverywhere.Services.pdb
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.pdb
@@ -42,7 +43,6 @@ D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\obj\Debug\netcoreapp2.1\BooksEverywhere.Web.Api.csprojAssemblyReference.cache
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\obj\Debug\netcoreapp2.1\BooksEverywhere.Web.Api.AssemblyInfoInputs.cache
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\obj\Debug\netcoreapp2.1\BooksEverywhere.Web.Api.AssemblyInfo.cs
-D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\obj\Debug\netcoreapp2.1\BooksEverywhere.Web.Api.csproj.CoreCompileInputs.cache
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\obj\Debug\netcoreapp2.1\BooksEverywhere.Web.Api.RazorAssemblyInfo.cache
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\obj\Debug\netcoreapp2.1\BooksEverywhere.Web.Api.RazorAssemblyInfo.cs
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\obj\Debug\netcoreapp2.1\BooksEverywhere.Web.Api.RazorTargetAssemblyInfo.cache
@@ -50,3 +50,4 @@ D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\obj\Debug\netcoreapp2.
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\obj\Debug\netcoreapp2.1\BooksEverywhere.Web.Api.dll
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\obj\Debug\netcoreapp2.1\BooksEverywhere.Web.Api.pdb
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\obj\Debug\netcoreapp2.1\BooksEverywhere.Web.Api.genruntimeconfig.cache
+D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\obj\Debug\netcoreapp2.1\BooksEverywhere.Web.Api.csproj.CoreCompileInputs.cache

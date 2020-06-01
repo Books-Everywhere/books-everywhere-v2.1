@@ -26,7 +26,7 @@ namespace BooksEverywhere.Services
 
         public async Task<User> Create(UserViewModel user)
         {
-            var userIdentity = _mapper.Map<User>(user);
+            var userIdentity = _mapper.Map<UserViewModel, User>(user);
             return await _userRepository.Create(userIdentity);
         }
 

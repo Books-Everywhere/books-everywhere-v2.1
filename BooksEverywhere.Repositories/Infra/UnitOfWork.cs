@@ -8,12 +8,11 @@ namespace BooksEverywhere.Repositories.Infra
     {
         private ITransaction _transaction;
         private ISession _session;
+        private readonly IDbConfig _dbConfig;
 
-        private readonly object _lockSession;
-        private readonly ISessionFactory _sessionFactory;
-
-        public UnitOfWork()
+        public UnitOfWork(IDbConfig dbConfig)
         {
+            _dbConfig = dbConfig;
             InitializeSession();
         }
 
@@ -33,10 +32,7 @@ namespace BooksEverywhere.Repositories.Infra
 
         private void InitializeSession()
         {
-            lock (_lockSession)
-            {
-                _sessionFactory.OpenSession();
-            }
+            _session = _dbConfig.OpenSession();
         }
 
         private void FinalizeSession()

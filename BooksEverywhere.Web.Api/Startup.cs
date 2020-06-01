@@ -3,6 +3,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using AutoMapper;
 using BooksEverywhere.Models.ApplicationDbContext;
+using BooksEverywhere.ViewModels.Mapper;
 using BooksEverywhere.Web.Api.App_Start;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -26,7 +27,7 @@ namespace BooksEverywhere.Web.Api
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAutoMapper(typeof(Startup));
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
             #region DbContext
             services.AddDbContext<ApplicationDbContext>();
@@ -59,7 +60,18 @@ namespace BooksEverywhere.Web.Api
                 });
             #endregion
 
+            #region AutoMapper
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new AutoMapping());
+            });
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
+            #endregion
+
+            #region DependencyInjectionConfig
             DependencyInjectionConfig.AddScope(services);
+            #endregion
 
             services.AddMvc();
         }

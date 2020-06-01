@@ -137,20 +137,6 @@ namespace BooksEverywhere.Repositories.Base
             return list.ToList();
         }
 
-        //protected virtual IQueryable<T> Query(Expression<Func<T, bool>> where, Expression<Func<T, object>> sortField, PageableQuery pageableQuery)
-        //{
-        //    return UnitOfWork.Session.Query<T>()
-        //        .Where(where)
-        //        .SortBy(sortField, pageableQuery.Ordenacao)
-        //        .Paginate(pageableQuery.Pagina, pageableQuery.ItensPorPagina);
-        //}
-
-        //protected virtual IQueryable<T> Query(PageableQuery pageableQuery)
-        //{
-        //    return UnitOfWork.Session.Query<T>()
-        //        .Paginate(pageableQuery.Pagina, pageableQuery.ItensPorPagina);
-        //}
-
         protected virtual IQueryable<T> Query(Expression<Func<T, bool>> where)
         {
             return UnitOfWork.Session.Query<T>().Where(where);

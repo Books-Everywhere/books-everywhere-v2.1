@@ -11,17 +11,16 @@ namespace BooksEverywhere.Web.Api.App_Start
     {
         public static void AddScope(IServiceCollection services)
         {
-            //services.AddScoped<IApplicationContext, ApplicationContext>();
-
-            #region UnitOfWork
+            #region UnitOfWork & DbConfig
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IDbConfig, DbConfig>();
             #endregion
 
             #region Services
             services.AddScoped<IUserService, UserService>();
             #endregion
 
-            #region Repository
+            #region Repositories
             services.AddScoped<IUserRepository, UserRepository>();
             #endregion
         }

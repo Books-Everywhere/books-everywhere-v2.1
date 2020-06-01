@@ -5,17 +5,17 @@ namespace BooksEverywhere.Models
 {
   public class User : IdentityUser
   {
-        public int IdUser { get; set; }
-        public string Email { get; set; }
-        public string UserName { get; set; }
-        public string Password { get; set; }
-        public DateTime CreatAt { get; set; }
-        public bool Enabled { get; set; }
-        public Guid Token { get; set; }
+        public virtual int IdUser { get; set; }
+        public virtual string Email { get; set; }
+        public virtual string UserName { get; set; }
+        public virtual string Password { get; set; }
+        public virtual DateTime CreatedAt { get; set; }
+        public virtual bool Enabled { get; set; }
+        public virtual Guid Token { get; set; }
 
-        User() 
+        public User() 
         {
-            CreatAt = DateTime.Now;
+            CreatedAt = DateTime.Now;
             Enabled = true;
         }
     }
