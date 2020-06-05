@@ -7,8 +7,7 @@ namespace BooksEverywhere.Services.Interfaces
     public interface IUserService
     {
         Task<User> Create(UserViewModel user);
-        Task Edit(User user);
-        Task<User> GetById(int idUser);
         User GetByUsername(string username);
+        Task<User> UpdateProfile(UserViewModel user);
     }
 }

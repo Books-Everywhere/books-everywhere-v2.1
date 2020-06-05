@@ -1,9 +1,7 @@
-using BooksEverywhere.Models;
 using BooksEverywhere.Services.Interfaces;
 using BooksEverywhere.ViewModels;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using static BooksEverywhere.Web.Api.Controllers.Jwt;
 using Microsoft.AspNetCore.Identity;
 using System.Collections.Generic;
 using System.Security.Claims;
@@ -13,6 +11,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Linq;
 using System.Text;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BooksEverywhere.Web.Api.Controllers
 {
@@ -49,7 +48,7 @@ namespace BooksEverywhere.Web.Api.Controllers
                     UserName = user.UserName,
                     Email = user.Email
                 };
-                var result = await _userManager.CreateAsync(userIdentity, user.PassWord);
+                var result = await _userManager.CreateAsync(userIdentity, user.Password);
                 if (result.Succeeded)
                 {
                     await _userService.Create(user);
@@ -64,30 +63,28 @@ namespace BooksEverywhere.Web.Api.Controllers
         }
         #endregion
 
-        #region Edit
-        [HttpPut]
-        [Route("{id}")]
-        public IActionResult Edit([FromBody] User user)
+        #region UpdateProfile
+        [HttpPost]
+        [Authorize]
+        [Route("update")]
+        public async Task<IActionResult> UpdateProfile([FromBody] UserViewModel user)
         {
-            _userService.Edit(user);
-            return Ok();
-        }
-        #endregion
-
-        #region GetById
-        [HttpGet]
-        [Route("{id}")]
-        public IActionResult GetById(int id)
-        {
-            var useReturn = _userService.GetById(id);
-            return Ok(useReturn);
+            try
+            {
+                await _userService.UpdateProfile(user);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
         #endregion
 
         #region Login
         [HttpPost]
         [Route("login")]
-        public async Task<object> Login([FromBody] User model)
+        public async Task<object> Login([FromBody] UserViewModel model)
         {
             var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
 
@@ -100,6 +97,8 @@ namespace BooksEverywhere.Web.Api.Controllers
             else
             {
                 var findUserByEmail = await _userManager.FindByEmailAsync(model.UserName);
+                if (findUserByEmail.Email == null)
+                    throw new ApplicationException("INVALID_LOGIN_ATTEMPT");
                 result = await _signInManager.PasswordSignInAsync(findUserByEmail.UserName, model.Password, false, false);
                 if (result.Succeeded)
                 {

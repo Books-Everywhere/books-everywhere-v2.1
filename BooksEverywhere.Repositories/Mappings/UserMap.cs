@@ -7,12 +7,16 @@ namespace BooksEverywhere.Repositories.Mappings
     {
         public UserMap()
         {
-            Id(x => x.IdUser);
-            Map(x => x.UserName).Not.Nullable();
-            Map(x => x.Email).Not.Nullable();
-            Map(x => x.Password).Not.Nullable();
-            Map(x => x.CreatedAt).Not.Nullable();
-            Map(x => x.Enabled).Not.Nullable();
+            Table("user");
+            Id(x => x.IdUser, "id");
+            Map(x => x.UserName, "username").Not.Nullable();
+            Map(x => x.Email, "email").Not.Nullable();
+            Map(x => x.Name, "name").Nullable();
+            Map(x => x.LastName, "lastname").Nullable();
+            Map(x => x.Gender, "gender").Nullable();
+            Map(x => x.BirthDate, "birthdate").Nullable();
+            Map(x => x.CreatedAt, "created_at").Not.Nullable();
+            Map(x => x.Enabled, "enabled").Not.Nullable();
         }
     }
 }
