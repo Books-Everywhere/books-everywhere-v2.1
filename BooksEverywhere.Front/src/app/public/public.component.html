@@ -808,7 +808,7 @@
                 </div>
                 <div class="col-12">
                   <div class="form-submit">
-                    <button type="submit" class="btn btn-common btn-effect">Entrar</button>
+                    <button type="submit" (click)="login()" class="btn btn-common btn-effect">Entrar</button>
                   </div>
                 </div>
               </div>
@@ -934,7 +934,7 @@
       <div class="section-header">
         <h2 class="section-title">Comece a organizar agora</h2>
         <!-- <span>Cadastro</span> -->
-        <!-- <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos debitis.</p> -->
+        <p class="section-subtitle">Faça seu cadastro.</p>
       </div>
       <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12">
@@ -943,28 +943,28 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group">
-                    <input type="text" placeholder="seu email..." autocomplete="off" id="email" class="form-control" name="name" required
-                      data-error="Por favor, digite seu email.">
+                    <input type="text" placeholder="Email" autocomplete="off" id="email" class="form-control" name="name" required
+                      data-error="Por favor, digite seu email." formControlName="email" inputValue="user.email">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="form-group">
-                    <input type="text" class="form-control" autocomplete="off" id="username" name="username" placeholder="seu nome de usuário..." required
+                    <input type="text" class="form-control" autocomplete="off" id="username" name="username" placeholder="Nome de usuário" required
                       data-error="Por favor, digite seu username." formControlName="username" inputValue="user.username">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="form-group">
-                    <input type="password" class="form-control" autocomplete="off" id="password" name="password" placeholder="sua senha..." required
+                    <input type="password" class="form-control" autocomplete="off" id="password" name="password" placeholder="Senha" required
                       data-error="Por favor, digite sua senha." formControlName="password" inputValue="user.password">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-2">
                   <div class="submit-button">
-                    <button class="btn btn-common btn-effect" id="submit" type="submit">Cadastrar</button>
+                    <button class="btn btn-common btn-effect" (click)="create()">Cadastrar</button>
                     <div id="msgSubmit" class="h3 hidden"></div>
                     <div class="clearfix"></div>
                   </div>

@@ -27,8 +27,10 @@ export class PublicComponent implements OnInit {
   }
 
   create(): void {
+    console.log('entrou');
     if (this.rForm.invalid) return;
 
+    console.log('> ', this.rForm);
     this.user.email = this.email.value;
     this.user.username = this.username.value;
     this.user.password = this.password.value;

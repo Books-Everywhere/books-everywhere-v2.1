@@ -42,19 +42,25 @@ namespace BooksEverywhere.Web.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] UserViewModel user)
         {
-            // cadastro funcionando, porém o retorno está estourando uma exception. verificar isso!
-            var userIdentity = new IdentityUser
+            try
             {
-                UserName = user.UserName,
-                Email = user.Email
-            };
-            var result = await _userManager.CreateAsync(userIdentity, user.PassWord);
-            if (result.Succeeded)
-            {
-                await _userService.Create(user);
-                await _signInManager.SignInAsync(userIdentity, false);
+                var userIdentity = new IdentityUser
+                {
+                    UserName = user.UserName,
+                    Email = user.Email
+                };
+                var result = await _userManager.CreateAsync(userIdentity, user.PassWord);
+                if (result.Succeeded)
+                {
+                    await _userService.Create(user);
+                    await _signInManager.SignInAsync(userIdentity, false);
+                }
+                return Ok();
             }
-            return Ok();
+            catch (Exception e)
+            {
+                return BadRequest(e.InnerException.Message);
+            }
         }
         #endregion
 

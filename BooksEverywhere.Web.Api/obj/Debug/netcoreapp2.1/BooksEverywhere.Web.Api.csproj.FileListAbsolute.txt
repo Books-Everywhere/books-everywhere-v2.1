@@ -35,7 +35,6 @@ D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\BooksEverywhere.Repositories.dll
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\BooksEverywhere.Services.dll
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.dll
-D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\MySql.Data.dll
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\BooksEverywhere.Repositories.pdb
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\BooksEverywhere.Services.pdb
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.Web.Api\bin\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.pdb

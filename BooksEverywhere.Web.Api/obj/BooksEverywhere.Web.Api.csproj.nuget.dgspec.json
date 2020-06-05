@@ -129,6 +129,10 @@
               "version": "[2.1.0, )",
               "autoReferenced": true
             },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.20, )"
+            },
             "NHibernate": {
               "target": "Package",
               "version": "[5.2.7, )"
@@ -366,6 +370,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.1.10, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.20, )"
             },
             "System.Diagnostics.PerformanceCounter": {
               "target": "Package",
