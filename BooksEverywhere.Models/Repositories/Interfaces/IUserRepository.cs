@@ -5,6 +5,6 @@ namespace BooksEverywhere.Models.Repositories.Interfaces
 {
     public interface IUserRepository : IBaseRepository<User>
     {
-        User GetByToken(Guid token);
+        User GetByUsername(string username);
     }
 }

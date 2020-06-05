@@ -11,7 +11,6 @@ namespace BooksEverywhere.Models
         public virtual string Password { get; set; }
         public virtual DateTime CreatedAt { get; set; }
         public virtual bool Enabled { get; set; }
-        public virtual Guid Token { get; set; }
 
         public User() 
         {

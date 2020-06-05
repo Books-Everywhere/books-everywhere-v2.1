@@ -1,6 +1,5 @@
 ﻿using BooksEverywhere.Models;
 using BooksEverywhere.ViewModels;
-using System;
 using System.Threading.Tasks;
 
 namespace BooksEverywhere.Services.Interfaces
@@ -10,6 +9,6 @@ namespace BooksEverywhere.Services.Interfaces
         Task<User> Create(UserViewModel user);
         Task Edit(User user);
         Task<User> GetById(int idUser);
-        User GetByToken(Guid token);
+        User GetByUsername(string username);
     }
 }

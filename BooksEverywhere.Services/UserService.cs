@@ -40,10 +40,10 @@ namespace BooksEverywhere.Services
             return _userRepository.Get(idUser);
         }
 
-        #region GetByToken
-        public User GetByToken(Guid token)
+        #region GetByUserName
+        public User GetByUsername(string username)
         {
-            return _userRepository.GetByToken(token);
+            return _userRepository.GetByUsername(username);
         }
         #endregion
     }

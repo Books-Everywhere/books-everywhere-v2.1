@@ -16,10 +16,10 @@ namespace BooksEverywhere.Repositories
         }
         #endregion
 
-        #region GetByToken
-        public User GetByToken(Guid token)
+        #region GetByUsername
+        public User GetByUsername(string username)
         {
-            return base.Query<User>().FirstOrDefault(x => x.Token == token);
+            return base.Query<User>().FirstOrDefault(x => x.UserName == username);
         }
         #endregion
     }

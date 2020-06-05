@@ -23,7 +23,7 @@ namespace BooksEverywhere.Web.Api.Controllers
         #region Imports
         private readonly IUserService _userService;
         private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly UserManager<IdentityUser> _userManager;
+        private UserManager<IdentityUser> _userManager;
         private readonly IConfiguration _configuration;
         #endregion
 
@@ -87,16 +87,26 @@ namespace BooksEverywhere.Web.Api.Controllers
         #region Login
         [HttpPost]
         [Route("login")]
-        public async Task<object> Login([FromBody] LoginDto model)
+        public async Task<object> Login([FromBody] User model)
         {
-            var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
+            var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
 
             if (result.Succeeded)
             {
-                var appUser = _userManager.Users.SingleOrDefault(r => r.Email == model.Email);
-                return await GenerateJwtToken(model.Email, appUser);
+                var findUserByUsername = _userService.GetByUsername(model.UserName);
+                var userIdentity = await _userManager.FindByEmailAsync(findUserByUsername.Email);
+                return await GenerateJwtToken(userIdentity.Email, userIdentity);
             }
-
+            else
+            {
+                var findUserByEmail = await _userManager.FindByEmailAsync(model.UserName);
+                result = await _signInManager.PasswordSignInAsync(findUserByEmail.UserName, model.Password, false, false);
+                if (result.Succeeded)
+                {
+                    var appUser = _userManager.Users.SingleOrDefault(r => r.Email == model.UserName);
+                    return await GenerateJwtToken(model.UserName, appUser);
+                }
+            }
             throw new ApplicationException("INVALID_LOGIN_ATTEMPT");
         }
         #endregion
