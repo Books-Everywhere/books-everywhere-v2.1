@@ -4,12 +4,12 @@ namespace BooksEverywhere.Models
 {
   public class Author
     {
-        public int IdAuthor { get; set; }
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public DateTime CreateAt { get; set; }
+        public virtual int IdAuthor { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string LastName { get; set; }
+        public virtual DateTime CreateAt { get; set; }
 
-        Author()
+        public Author()
         {
             CreateAt = DateTime.Now;
         }

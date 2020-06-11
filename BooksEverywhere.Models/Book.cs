@@ -5,19 +5,19 @@ namespace BooksEverywhere.Models
 {
     public class Book
     {
-        public int IdBook { get; set; }
-        public string Title { get; set; }
-        public string ISBN { get; set; }
-        public string Edition { get; set; }
-        public string Language { get; set; } // pt-br, us etc
-        public DateTime PublicationDate { get; set; }
-        public DateTime CreateAt { get; set; }
+        public virtual int IdBook { get; set; }
+        public virtual string Title { get; set; }
+        public virtual string ISBN { get; set; }
+        public virtual string Edition { get; set; }
+        public virtual string Language { get; set; } // pt-br, us etc
+        public virtual DateTime PublicationDate { get; set; }
+        public virtual DateTime CreateAt { get; set; }
+               
+        public virtual Author Author { get; set; }
+        public virtual Publisher Publisher { get; set; }
+        public virtual BookGenre BookGenre { get; set; }
 
-        public Author Author { get; set; }
-        public Publisher Publisher { get; set; }
-        public BookGenre BookGenre { get; set; }
-
-        Book()
+        public Book()
         {
             CreateAt = DateTime.Now;
         }

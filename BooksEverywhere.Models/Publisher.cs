@@ -2,13 +2,13 @@ using System;
 
 namespace BooksEverywhere.Models
 {
-  public class Publisher
+    public class Publisher
     {
-        public int IdPublisher { get; set; }
-        public string Name { get; set; }
-        public DateTime CreateAt { get; set; }
+        public virtual int IdPublisher { get; set; }
+        public virtual string Name { get; set; }
+        public virtual DateTime CreateAt { get; set; }
 
-        Publisher()
+        public Publisher()
         {
             CreateAt = DateTime.Now;
         }
