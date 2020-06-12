@@ -13,33 +13,33 @@ import { TokenService } from '../services/token.service';
 export class PublicComponent implements OnInit {
 
   user = new User();
-  rForm: FormGroup;
+  userForm: FormGroup;
 
   constructor(private userService: UserService, private helpers: Helpers, private router: Router, private tokenService: TokenService) {
   }
 
   ngOnInit() {
-    this.rForm = new FormGroup({
+    this.userForm = new FormGroup({
       email: new FormControl(this.user.email),
       username: new FormControl(this.user.username),
       password: new FormControl(this.user.password)
     });
   }
 
-  create(): void {
+  create() {
     console.log('entrou');
-    if (this.rForm.invalid) return;
+    // if (this.userForm.invalid) return;
 
-    console.log('> ', this.rForm);
-    this.user.email = this.email.value;
-    this.user.username = this.username.value;
-    this.user.password = this.password.value;
+    console.log('> ', this.userForm);
+    // this.user.email = this.email.value;
+    // this.user.username = this.username.value;
+    // this.user.password = this.password.value;
 
-    if (this.user.id > 0) {
-      this.userService.edit(this.user);
-    } else {
-      this.userService.create(this.user);
-    }
+    // if (this.user.id > 0) {
+    //   this.userService.edit(this.user);
+    // } else {
+    //   this.userService.create(this.user);
+    // }
   }
 
   // login in progress 
@@ -56,14 +56,14 @@ export class PublicComponent implements OnInit {
   // this.router.navigate(['/login']);
 
   get email() {
-    return this.rForm.get('email');
+    return this.userForm.get('email');
   }
 
   get username() {
-    return this.rForm.get('username');
+    return this.userForm.get('username');
   }
 
   get password() {
-    return this.rForm.get('password');
+    return this.userForm.get('password');
   }
 }

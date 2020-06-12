@@ -6,11 +6,11 @@ namespace BooksEverywhere.Models
     {
         public virtual int IdPublisher { get; set; }
         public virtual string Name { get; set; }
-        public virtual DateTime CreateAt { get; set; }
+        public virtual DateTime CreatedAt { get; set; }
 
         public Publisher()
         {
-            CreateAt = DateTime.Now;
+            CreatedAt = DateTime.Now;
         }
     }
 }
