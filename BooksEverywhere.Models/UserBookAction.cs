@@ -5,8 +5,8 @@ namespace BooksEverywhere.Models
 {
   public class UserBookAction
     {
-        public User User { get; set; }
-        public Book Book { get; set; }
-        public BookAction BookAction { get; set; }
+        public virtual User User { get; set; }
+        public virtual Book Book { get; set; }
+        public virtual BookAction BookAction { get; set; }
     }
 }

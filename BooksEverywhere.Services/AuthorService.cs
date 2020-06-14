@@ -12,7 +12,6 @@ namespace BooksEverywhere.Services
         #region Imports
         private readonly IMapper _mapper;
         private readonly IAuthorRepository _authorRepository;
-
         #endregion
 
         #region Constructor

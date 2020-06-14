@@ -43,7 +43,6 @@ namespace BooksEverywhere.Services
             getBookToUpdate.PublicationDate = book.PublicationDate;
             getBookToUpdate.Author = new Author { IdAuthor = book.Author.IdAuthor };
             getBookToUpdate.Publisher = new Publisher { IdPublisher = book.Publisher.IdPublisher };
-            getBookToUpdate.BookGenre = (BookGenre)book.BookGenre;
             return await _bookRepository.Create(getBookToUpdate);
         }
         #endregion

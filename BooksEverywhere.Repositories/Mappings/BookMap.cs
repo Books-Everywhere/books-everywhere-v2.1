@@ -18,8 +18,8 @@ namespace BooksEverywhere.Repositories.Mappings
             Map(x => x.Cover, "cover").Nullable();
             Map(x => x.Synopsis, "synopsis").Nullable();
             Map(x => x.Pages, "pages").Not.Nullable();
-            References(x => x.Publisher).Column("id").Nullable();
-            References(x => x.Author).Column("id").Nullable();
+            //References(x => x.Publisher).Column("publisher_id").Nullable();
+            //References(x => x.Author).Column("author_id").Nullable();
         }
     }
 }

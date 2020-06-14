@@ -9,10 +9,16 @@ namespace BooksEverywhere.ViewModels.Mapper
         {
             #region Entity to ViewModel
             CreateMap<User, UserViewModel>();
+            CreateMap<Book, BookViewModel>();
+            CreateMap<Author, AuthorViewModel>();
+            CreateMap<Publisher, PublisherViewModel>();
             #endregion
 
             #region ViewModel to Entity
             CreateMap<UserViewModel, User>();
+            CreateMap<BookViewModel, Book>();
+            CreateMap<AuthorViewModel, Author>();
+            CreateMap<PublisherViewModel, Publisher>();
             #endregion
         }
     }

@@ -1001,6 +1001,15 @@
           "lib/netcoreapp2.0/NHibernate.dll": {}
         }
       },
+      "Oracle.ManagedDataAccess.Core/2.19.70": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Oracle.ManagedDataAccess.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Oracle.ManagedDataAccess.dll": {}
+        }
+      },
       "Pomelo.EntityFrameworkCore.MySql/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -3605,6 +3614,22 @@
         "nhibernate-mapping.xsd",
         "nhibernate.5.2.7.nupkg.sha512",
         "nhibernate.nuspec"
+      ]
+    },
+    "Oracle.ManagedDataAccess.Core/2.19.70": {
+      "sha512": "bpsnNrSc/dtKx5KSrnG1CTYlAzNzWV0BVmb5HbcPDgMY5FfGLKi5W96e7UHtSq6vniKIt7ptTie9uWGUqOyj4A==",
+      "type": "package",
+      "path": "oracle.manageddataaccess.core/2.19.70",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PerfCounters/register_odpc_perfmon_counters.ps1",
+        "PerfCounters/unregister_odpc_perfmon_counters.ps1",
+        "info.txt",
+        "lib/netstandard2.0/Oracle.ManagedDataAccess.dll",
+        "oracle.manageddataaccess.core.2.19.70.nupkg.sha512",
+        "oracle.manageddataaccess.core.nuspec",
+        "readme.txt"
       ]
     },
     "Pomelo.EntityFrameworkCore.MySql/2.1.0": {
@@ -7193,6 +7218,7 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "MySql.Data >= 8.0.20",
       "NHibernate >= 5.2.7",
+      "Oracle.ManagedDataAccess.Core >= 2.19.70",
       "System.Drawing.Common >= 4.7.0",
       "System.Text.Encoding.CodePages >= 4.7.1"
     ]
@@ -7263,6 +7289,10 @@
           "NHibernate": {
             "target": "Package",
             "version": "[5.2.7, )"
+          },
+          "Oracle.ManagedDataAccess.Core": {
+            "target": "Package",
+            "version": "[2.19.70, )"
           },
           "System.Drawing.Common": {
             "target": "Package",

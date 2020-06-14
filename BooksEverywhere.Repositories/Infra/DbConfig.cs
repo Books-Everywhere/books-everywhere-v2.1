@@ -16,7 +16,7 @@ namespace BooksEverywhere.Repositories.Infra
 
             _sessionFactory = Fluently.Configure()
                 .Database(MySQLConfiguration.Standard.ConnectionString($"Server=localhost;Port=3306;Database=books_everywhere;user=root;password=12345;Pooling=true;CharSet=utf8;"))
-                .Mappings(m => m.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()))
+                //.Mappings(m => m.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()))
                 .BuildSessionFactory();
         }
 

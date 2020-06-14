@@ -2,7 +2,7 @@ using System;
 
 namespace BooksEverywhere.Models
 {
-  public class Author
+    public class Author
     {
         public virtual int IdAuthor { get; set; }
         public virtual string Name { get; set; }

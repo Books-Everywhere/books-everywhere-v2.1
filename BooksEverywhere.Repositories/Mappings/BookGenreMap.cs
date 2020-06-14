@@ -8,8 +8,8 @@ namespace BooksEverywhere.Repositories.Mappings
         public BookGenreMap()
         {
             Table("book_genre");
-            References(x => x.Book).Column("id").Nullable();
-            References(x => x.Genre).Column("id").Nullable();
+            //References(x => x.Book).Column("book_id").Nullable();
+            //References(x => x.Genre).Column("genre_id").Nullable();
         }
     }
 }

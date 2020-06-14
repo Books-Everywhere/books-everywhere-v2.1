@@ -3,12 +3,12 @@ using System;
 
 namespace BooksEverywhere.Models
 {
-  public class UserBookStatus
+    public class UserBookStatus
     {
-        public User User { get; set; }
-        public Book Book { get; set; }
-        public DateTime StartedAt { get; set; }
-        public DateTime FinishedAt { get; set; }
-        public BookStatus BookStatus { get; set; }
+        public virtual User User { get; set; }
+        public virtual Book Book { get; set; }
+        public virtual DateTime StartedAt { get; set; }
+        public virtual DateTime FinishedAt { get; set; }
+        public virtual BookStatus BookStatus { get; set; }
     }
 }
