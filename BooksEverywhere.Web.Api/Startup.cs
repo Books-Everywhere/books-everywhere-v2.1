@@ -94,7 +94,8 @@ namespace BooksEverywhere.Web.Api
 
             app.UseMvc();
 
-            dbContext.Database.EnsureCreated();
+            // tirei para poder fazer o deploy, descomentar depois!!!
+            //dbContext.Database.EnsureCreated();
         }
     }
 }
