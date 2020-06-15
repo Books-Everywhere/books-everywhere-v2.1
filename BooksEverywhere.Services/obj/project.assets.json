@@ -5271,23 +5271,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabri\\.nuget\\packages\\": {},
+    "C:\\Users\\LuizaM\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
+      "projectUniqueName": "D:\\Projetos\\BooksEverywhere\\books-everywhere-v2.1\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
       "projectName": "BooksEverywhere.Services",
-      "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
-      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Services\\obj\\",
+      "projectPath": "D:\\Projetos\\BooksEverywhere\\books-everywhere-v2.1\\BooksEverywhere.Services\\BooksEverywhere.Services.csproj",
+      "packagesPath": "C:\\Users\\LuizaM\\.nuget\\packages\\",
+      "outputPath": "D:\\Projetos\\BooksEverywhere\\books-everywhere-v2.1\\BooksEverywhere.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LuizaM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5295,16 +5295,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://vegait.pkgs.visualstudio.com/_packaging/VegaPackages/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
-              "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj"
+            "D:\\Projetos\\BooksEverywhere\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
+              "projectPath": "D:\\Projetos\\BooksEverywhere\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj"
             },
-            "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj": {
-              "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj"
+            "D:\\Projetos\\BooksEverywhere\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj": {
+              "projectPath": "D:\\Projetos\\BooksEverywhere\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj"
             }
           }
         }
@@ -5330,16 +5331,10 @@
           }
         },
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }
