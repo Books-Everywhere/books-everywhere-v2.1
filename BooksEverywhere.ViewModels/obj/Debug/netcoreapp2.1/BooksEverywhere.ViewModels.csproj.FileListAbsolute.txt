@@ -22,3 +22,15 @@ D:\Projetos\books-everywhere-v2.1\BooksEverywhere.ViewModels\obj\Debug\netcoreap
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.ViewModels\obj\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.csproj.CopyComplete
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.ViewModels\obj\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.dll
 D:\Projetos\books-everywhere-v2.1\BooksEverywhere.ViewModels\obj\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.pdb
+D:\Projetos\BooksEverywhere\books-everywhere-v2.1\BooksEverywhere.ViewModels\bin\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.deps.json
+D:\Projetos\BooksEverywhere\books-everywhere-v2.1\BooksEverywhere.ViewModels\bin\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.dll
+D:\Projetos\BooksEverywhere\books-everywhere-v2.1\BooksEverywhere.ViewModels\bin\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.pdb
+D:\Projetos\BooksEverywhere\books-everywhere-v2.1\BooksEverywhere.ViewModels\bin\Debug\netcoreapp2.1\BooksEverywhere.Models.dll
+D:\Projetos\BooksEverywhere\books-everywhere-v2.1\BooksEverywhere.ViewModels\bin\Debug\netcoreapp2.1\BooksEverywhere.Models.pdb
+D:\Projetos\BooksEverywhere\books-everywhere-v2.1\BooksEverywhere.ViewModels\obj\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.csprojAssemblyReference.cache
+D:\Projetos\BooksEverywhere\books-everywhere-v2.1\BooksEverywhere.ViewModels\obj\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.csproj.CoreCompileInputs.cache
+D:\Projetos\BooksEverywhere\books-everywhere-v2.1\BooksEverywhere.ViewModels\obj\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.AssemblyInfoInputs.cache
+D:\Projetos\BooksEverywhere\books-everywhere-v2.1\BooksEverywhere.ViewModels\obj\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.AssemblyInfo.cs
+D:\Projetos\BooksEverywhere\books-everywhere-v2.1\BooksEverywhere.ViewModels\obj\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.csproj.CopyComplete
+D:\Projetos\BooksEverywhere\books-everywhere-v2.1\BooksEverywhere.ViewModels\obj\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.dll
+D:\Projetos\BooksEverywhere\books-everywhere-v2.1\BooksEverywhere.ViewModels\obj\Debug\netcoreapp2.1\BooksEverywhere.ViewModels.pdb
