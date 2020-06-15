@@ -8,7 +8,7 @@ export class AppConfig {
 
     constructor() {
         this._config = {
-            PathAPI: 'http://localhost:44325/api/'
+            PathAPI: 'https://localhost:44325/api/'
         };
     }
 

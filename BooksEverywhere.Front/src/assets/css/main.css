@@ -150,7 +150,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .btn-common {
-  background-color: #64625d;
+  background-color: #34325e;
   position: relative;
   z-index: 1;
   padding: 12px 32px;
@@ -324,7 +324,7 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #263238;
+  background: #fff;
   z-index: 9999999999;
 }
 
@@ -340,7 +340,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #F97794;
+  background-color: #34325e;
   opacity: 0.6;
   position: absolute;
   top: 0;
@@ -410,7 +410,7 @@ button:focus {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #F97794;
+  background: #34325e;
   opacity: 0.5;
   filter: alpha(opacity=80);
 }
@@ -468,10 +468,13 @@ button:focus {
 
 .menu-bg .navbar-nav .nav-link {
   color: #263238 !important;
+  text-transform: uppercase;
+  font-size: small;
 }
 
 .menu-bg .navbar-nav .nav-link:hover {
-  color: #000 !important;
+  color: rgb(255, 255, 255) !important;
+  
 }
 
 .menu-bg .navbar-nav .active {
@@ -525,6 +528,8 @@ button:focus {
   padding: 5px 0px;
   margin-left: 30px;
   position: relative;
+  text-transform: uppercase;
+  font-size: small;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:before {
@@ -1053,8 +1058,8 @@ button:focus {
 }
 
 .controls .active {
-  color: #F97794 !important;
-  border-color: #F97794;
+  color: #34325e !important;
+  border-color: #34325e;
   background: transparent;
 }
 
@@ -1140,7 +1145,7 @@ button:focus {
   border-radius: 4px;
   border: 1px solid #eaeaea;
   margin: 15px 0;
-  webkit-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1641,7 +1646,7 @@ button:focus {
    ========================================================================== */
 #carousel-area {
   overflow: hidden;
-  background: #2c3e50;
+  background: #fff;
 }
 
 #carousel-area .carousel-item {
@@ -2083,8 +2088,7 @@ textarea {
   19. Subscribe Style
   ========================================================================== */
 #subscribe {
-  background: url(../img/bg/open-books.jpeg);
-  position: relative;
+  /* background: url(../img/header-2.png); */
 }
 
 .subscribe-form .sub-title {

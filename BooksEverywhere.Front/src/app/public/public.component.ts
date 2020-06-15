@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, ReactiveFormsModule, Validators, FormBuilder } from '@angular/forms';
 import { User } from '../models/user';
 import { UserService } from '../services/user.service';
 import { Helpers } from '../helpers/helpers';
@@ -15,31 +15,33 @@ export class PublicComponent implements OnInit {
   user = new User();
   userForm: FormGroup;
 
-  constructor(private userService: UserService, private helpers: Helpers, private router: Router, private tokenService: TokenService) {
+  constructor(private userService: UserService,
+    private helpers: Helpers,
+    private router: Router,
+    private tokenService: TokenService,
+    private _formBuilder: FormBuilder) {
   }
 
   ngOnInit() {
-    this.userForm = new FormGroup({
-      email: new FormControl(this.user.email),
-      username: new FormControl(this.user.username),
-      password: new FormControl(this.user.password)
+    this.userForm = this._formBuilder.group({
+      email: [this.user.email, Validators.required],
+      username: [this.user.username, Validators.required],
+      password: [this.user.password, Validators.required]
     });
   }
 
   create() {
-    console.log('entrou');
-    // if (this.userForm.invalid) return;
+    if (this.userForm.invalid) return;
 
-    console.log('> ', this.userForm);
-    // this.user.email = this.email.value;
-    // this.user.username = this.username.value;
-    // this.user.password = this.password.value;
+    this.user.email = this.email.value;
+    this.user.username = this.username.value;
+    this.user.password = this.password.value;
 
-    // if (this.user.id > 0) {
-    //   this.userService.edit(this.user);
-    // } else {
-    //   this.userService.create(this.user);
-    // }
+    if (this.user.id > 0) {
+      this.userService.edit(this.user);
+    } else {
+      this.userService.create(this.user);
+    }
   }
 
   // login in progress 

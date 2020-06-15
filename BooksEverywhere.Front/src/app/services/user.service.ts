@@ -8,10 +8,12 @@ import { User } from '../models/user';
 import { AppConfig } from '../config/config';
 import { Helpers } from '../helpers/helpers';
 
-@Injectable()
+@Injectable({
+    providedIn: 'root'
+})
 export class UserService extends BaseService {
 
-    private pathAPI = this.config.setting['user/'];
+    private pathAPI = this.config.setting['PathAPI'] + 'user';
 
     constructor(private http: HttpClient, private config: AppConfig, helper: Helpers) { super(helper); }
 
@@ -21,13 +23,18 @@ export class UserService extends BaseService {
     //        catchError(super.handleError));
     //}
 
-    create(item: any): Promise<any> {
+    // async create(item: User): Promise<any> {
+    //     const url = `${this.pathAPI}`;
+    //     return this.http.post<any>(url, JSON.stringify(item)).toPromise();
+    // }
+
+    create(item: User) {
         const url = `${this.pathAPI}`;
-        return this.http.post<any>(url, JSON.stringify(item)).toPromise();
+        return this.http.post<User>(url, item).subscribe(res => console.log(res));
     }
 
-    edit(user: User): Promise<any> {
+    async edit(user: User): Promise<any> {
         const url = `${this.pathAPI}${user.id}`;
-        return this.http.put<User>(url, JSON.stringify(user)).toPromise();
+        return await this.http.put<User>(url, JSON.stringify(user)).toPromise();
     }
 }
