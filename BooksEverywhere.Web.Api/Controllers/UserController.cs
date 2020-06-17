@@ -12,6 +12,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Authorization;
+using FluentNHibernate.Utils;
 
 namespace BooksEverywhere.Web.Api.Controllers
 {
@@ -41,13 +42,14 @@ namespace BooksEverywhere.Web.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] UserViewModel user)
         {
+            var userIdentity = new IdentityUser
+            {
+                UserName = user.UserName,
+                Email = user.Email
+            };
+
             try
             {
-                var userIdentity = new IdentityUser
-                {
-                    UserName = user.UserName,
-                    Email = user.Email
-                };
                 var result = await _userManager.CreateAsync(userIdentity, user.Password);
                 if (result.Succeeded)
                 {
@@ -58,7 +60,8 @@ namespace BooksEverywhere.Web.Api.Controllers
             }
             catch (Exception e)
             {
-                return BadRequest(e.InnerException.Message);
+                await _userManager.DeleteAsync(userIdentity);
+                return BadRequest();
             }
         }
         #endregion
