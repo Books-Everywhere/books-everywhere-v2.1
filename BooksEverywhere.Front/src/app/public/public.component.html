@@ -55,7 +55,7 @@
     <div class="section-header">
       <h2 class="section-title">Porque nos escolher</h2>
       <!-- <span>Why</span> -->
-      <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos debitis.</p>
+      <p class="section-subtitle">Organize e Descubra livros.</p>
     </div>
     <div class="row">
       <!-- Start featured -->
@@ -66,9 +66,8 @@
           </div>
           <div class="featured-content">
             <div class="icon-o"><i class="lni-layout"></i></div>
-            <h4>Refreshing Design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              magna aliqua.</p>
+            <h4>Organização</h4>
+            <p>Você pode marcar o livro que está lendo, qual quer ler, qual deseja ou até qual você abandonou.</p>
           </div>
         </div>
       </div>
@@ -160,20 +159,21 @@
       <div class="col-lg-5 col-md-12 col-xs-12">
         <div class="subscribe-form">
           <div class="form-wrapper">
-            <form>
+            <form [formGroup]="userForm">
               <div class="row">
                 <div class="featured-box">
                   <img style="width: 40%; margin-left: 40%;" src="./assets/img/book-2.png" alt="Faça seu login.">
                 </div>
                 <div class="col-12 form-line">
                   <div class="form-group">
-                    <input type="text" class="form-control" autocomplete="nope" name="email" placeholder="Seu email">
+                    <input type="text" class="form-control" autocomplete="nope" name="email" placeholder="Seu email"
+                      formControlName="email">
                   </div>
                 </div>
                 <div class="col-md-12 form-line">
                   <div class="form-group">
                     <input type="password" class="form-control" autocomplete="off" name="password"
-                      placeholder="Sua senha">
+                      placeholder="Sua senha" formControlName="password">
                   </div>
                 </div>
                 <div class="col-12">

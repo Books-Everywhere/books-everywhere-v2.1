@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, ReactiveFormsModule, Validators, FormBuilder } from '@angular/forms';
+import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { User } from '../models/user';
 import { UserService } from '../services/user.service';
 import { Helpers } from '../helpers/helpers';
@@ -16,14 +16,14 @@ export class PublicComponent implements OnInit {
   userForm: FormGroup;
 
   constructor(private userService: UserService,
-    private helpers: Helpers,
-    private router: Router,
-    private tokenService: TokenService,
-    private _formBuilder: FormBuilder) {
+              private helpers: Helpers,
+              private router: Router,
+              private tokenService: TokenService,
+              private formBuilder: FormBuilder) {
   }
 
   ngOnInit() {
-    this.userForm = this._formBuilder.group({
+    this.userForm = this.formBuilder.group({
       email: [this.user.email, Validators.required],
       username: [this.user.username, Validators.required],
       password: [this.user.password, Validators.required]
@@ -31,13 +31,11 @@ export class PublicComponent implements OnInit {
   }
 
   create() {
-    if (this.userForm.invalid) return;
+    if (this.userForm.invalid) { return; }
 
     this.user.email = this.email.value;
     this.user.username = this.username.value;
     this.user.password = this.password.value;
-
-    console.log('>> user: ', this.user);
 
     if (this.user.id > 0) {
       this.userService.edit(this.user);
@@ -46,9 +44,11 @@ export class PublicComponent implements OnInit {
     }
   }
 
-  // login in progress 
+  // login in progress
   login(): void {
-    let authValues = { "Username": this.user.username, "Password": this.user.password };
+    this.user.username = this.username.value;
+    this.user.password = this.password.value;
+    const authValues = { Username: this.user.username, Password: this.user.password };
     this.tokenService.auth(authValues).subscribe(token => {
       this.helpers.setToken(token);
       this.router.navigate(['/dashboard']);
