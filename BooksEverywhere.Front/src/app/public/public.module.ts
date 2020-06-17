@@ -15,8 +15,7 @@ import { PublicRoutingModule } from './public-routing.module';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
-  bootstrap: [PublicComponent]
+  bootstrap: [PublicComponent],
 })
 
 export class PublicModule { }

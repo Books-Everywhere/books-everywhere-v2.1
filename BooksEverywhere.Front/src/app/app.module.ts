@@ -10,10 +10,12 @@ import { BaseService } from './services/base.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AppConfig } from './config/config';
 import { Helpers } from './helpers/helpers';
+import { PublicComponent } from './public/public.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PublicComponent
   ],
   imports: [
     BrowserModule,

@@ -37,6 +37,8 @@ export class PublicComponent implements OnInit {
     this.user.username = this.username.value;
     this.user.password = this.password.value;
 
+    console.log('>> user: ', this.user);
+
     if (this.user.id > 0) {
       this.userService.edit(this.user);
     } else {
