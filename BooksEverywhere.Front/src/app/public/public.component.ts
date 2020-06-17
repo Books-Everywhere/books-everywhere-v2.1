@@ -8,7 +8,7 @@ import { TokenService } from '../services/token.service';
 
 @Component({
   selector: 'app-public',
-  templateUrl: './public.component.html',
+  templateUrl: './public.component.html'
 })
 export class PublicComponent implements OnInit {
 

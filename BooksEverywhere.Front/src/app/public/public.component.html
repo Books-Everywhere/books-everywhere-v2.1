@@ -3,7 +3,6 @@
     <div class="container">
       <a class="navbar-brand" href="/"
         style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; font-size: medium;">
-        <!-- <span class="lni-book"></span> -->
         Books Everywhere
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -19,10 +18,10 @@
             <a class="nav-link page-scroll" href="#features">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link page-scroll" href="#subscribe">Entrar</a>
+            <a class="nav-link page-scroll" href="#login">Entrar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link page-scroll" href="#contact">Cadastre-se</a>
+            <a class="nav-link page-scroll" href="#register">Cadastre-se</a>
           </li>
         </ul>
       </div>
@@ -42,23 +41,20 @@
       </div>
       <div class="col-lg-4 col-md-6 col-xs-12">
         <div class="featured-box">
-          <img style="width: 200%;" src="./assets/img/slider/hader-2-normal.png" alt="">
+          <img style="width: 200%;" src="./assets/public/img/slider/hader-2-normal.png" alt="">
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Features Section Start -->
 <section id="features" class="section">
   <div class="container">
     <div class="section-header">
       <h2 class="section-title">Porque nos escolher</h2>
-      <!-- <span>Why</span> -->
       <p class="section-subtitle">Organize e Descubra livros.</p>
     </div>
     <div class="row">
-      <!-- Start featured -->
       <div class="col-lg-4 col-md-6 col-xs-12">
         <div class="featured-box">
           <div class="featured-icon">
@@ -71,8 +67,6 @@
           </div>
         </div>
       </div>
-      <!-- End featured -->
-      <!-- Start featured -->
       <div class="col-lg-4 col-md-6 col-xs-12">
         <div class="featured-box">
           <div class="featured-icon">
@@ -86,8 +80,6 @@
           </div>
         </div>
       </div>
-      <!-- End featured -->
-      <!-- Start featured -->
       <div class="col-lg-4 col-md-6 col-xs-12">
         <div class="featured-box">
           <div class="featured-icon">
@@ -101,8 +93,6 @@
           </div>
         </div>
       </div>
-      <!-- End featured -->
-      <!-- Start featured -->
       <div class="col-lg-4 col-md-6 col-xs-12">
         <div class="featured-box">
           <div class="featured-icon">
@@ -116,8 +106,6 @@
           </div>
         </div>
       </div>
-      <!-- End featured -->
-      <!-- Start featured -->
       <div class="col-lg-4 col-md-6 col-xs-12">
         <div class="featured-box">
           <div class="featured-icon">
@@ -131,8 +119,6 @@
           </div>
         </div>
       </div>
-      <!-- End featured -->
-      <!-- Start featured -->
       <div class="col-lg-4 col-md-6 col-xs-12">
         <div class="featured-box">
           <div class="featured-icon">
@@ -146,14 +132,11 @@
           </div>
         </div>
       </div>
-      <!-- End featured -->
     </div>
   </div>
 </section>
-<!-- Features Section End -->
 
-<!-- Login Section Start -->
-<div id="subscribe" class="section">
+<div id="login" class="section">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-5 col-md-12 col-xs-12">
@@ -162,18 +145,16 @@
             <form [formGroup]="userForm">
               <div class="row">
                 <div class="featured-box">
-                  <img style="width: 40%; margin-left: 40%;" src="./assets/img/book-2.png" alt="Faça seu login.">
+                  <img style="width: 40%; margin-left: 40%;" src="./assets/public/img/book-2.png" alt="Faça seu login.">
                 </div>
                 <div class="col-12 form-line">
                   <div class="form-group">
-                    <input type="text" class="form-control" autocomplete="nope" name="email" placeholder="Seu email"
-                      formControlName="email">
+                    <input type="text" class="form-control" placeholder="Seu email" formControlName="email">
                   </div>
                 </div>
                 <div class="col-md-12 form-line">
                   <div class="form-group">
-                    <input type="password" class="form-control" autocomplete="off" name="password"
-                      placeholder="Sua senha" formControlName="password">
+                    <input type="password" class="form-control" placeholder="Sua senha" formControlName="password">
                   </div>
                 </div>
                 <div class="col-12">
@@ -189,15 +170,12 @@
     </div>
   </div>
 </div>
-<!-- Login Section End -->
 
-<!-- Register Section Start -->
-<section id="contact" class="section">
+<section id="register" class="section">
   <div class="contact-form">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Comece a organizar agora</h2>
-        <!-- <span>Cadastro</span> -->
         <p class="section-subtitle">Faça seu cadastro.</p>
       </div>
       <div class="row">
@@ -242,11 +220,8 @@
     </div>
   </div>
 </section>
-<!-- Contact Section End -->
 
-<!-- Footer Section Start -->
 <footer>
-  <!-- Footer Area Start -->
   <section class="footer-Content">
     <div class="container">
       <div class="row">
@@ -255,60 +230,10 @@
           <div class="textwidget">
             <p>Conectando pessoas e livros.</p>
           </div>
-          <!-- <ul class="footer-social">
-            <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
-            <li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="lni-linkedin-fill"></i></a></li>
-            <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
-          </ul> -->
         </div>
-        <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-          <div class="widget">
-            <h3 class="block-title">Short Link</h3>
-            <ul class="menu">
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Wishlist</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Advance Sarch</a></li>
-              <li><a href="#">Site Map</a></li>
-            </ul>
-          </div>
-        </div> -->
-        <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-          <div class="widget">
-            <h3 class="block-title">Contact Us</h3>
-            <ul class="contact-footer">
-              <li>
-                <strong>Address :</strong> <span>1900 Pico Blvd, New York br Centernial, colorado</span>
-              </li>
-              <li>
-                <strong>Phone :</strong> <span>+48 123 456 789</span>
-              </li>
-              <li>
-                <strong>E-mail :</strong> <span><a href="#">info@example.com</a></span>
-              </li>
-            </ul>
-          </div>
-        </div> -->
-        <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-          <div class="widget">
-            <h3 class="block-title">Instagram</h3>
-            <ul class="instagram-footer">
-              <li><a href="#"><img src="img/instagram/insta1.jpg" alt=""></a></li>
-              <li><a href="#"><img src="img/instagram/insta2.jpg" alt=""></a></li>
-              <li><a href="#"><img src="img/instagram/insta3.jpg" alt=""></a></li>
-              <li><a href="#"><img src="img/instagram/insta4.jpg" alt=""></a></li>
-              <li><a href="#"><img src="img/instagram/insta5.jpg" alt=""></a></li>
-              <li><a href="#"><img src="img/instagram/insta6.jpg" alt=""></a></li>
-            </ul>
-          </div>
-        </div> -->
       </div>
     </div>
   </section>
-  <!-- Footer area End -->
-
-  <!-- Copyright Start  -->
   <div id="copyright">
     <div class="container">
       <div class="row">
@@ -333,12 +258,8 @@
       </div>
     </div>
   </div>
-  <!-- Copyright End -->
-
 </footer>
-<!-- Footer Section End -->
 
-<!-- Go To Top Link -->
 <a href="#" class="back-to-top">
   <i class="lni-arrow-up"></i>
 </a>

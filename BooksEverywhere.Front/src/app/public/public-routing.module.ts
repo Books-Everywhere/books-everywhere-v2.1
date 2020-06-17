@@ -4,7 +4,6 @@ import { PublicComponent } from './public.component';
 
 const routes: Routes = [
   { path: '', component: PublicComponent }
-  // { path: 'private', component: PrivateComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({

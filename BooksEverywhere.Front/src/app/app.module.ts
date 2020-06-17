@@ -11,11 +11,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppConfig } from './config/config';
 import { Helpers } from './helpers/helpers';
 import { PublicComponent } from './public/public.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PublicComponent
+    PublicComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
