@@ -1040,6 +1040,7 @@
       "BooksEverywhere.Repositories/1.0.0": {
         "dependencies": {
           "BooksEverywhere.Models": "1.0.0",
+          "BooksEverywhere.ViewModels": "1.0.0",
           "FluentNHibernate": "2.1.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.1",
           "NHibernate": "5.2.7",

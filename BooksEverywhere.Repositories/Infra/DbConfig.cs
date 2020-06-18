@@ -1,4 +1,5 @@
-﻿using FluentNHibernate.Cfg;
+﻿using BooksEverywhere.Models;
+using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using System.Reflection;
@@ -15,8 +16,9 @@ namespace BooksEverywhere.Repositories.Infra
             _lockSession = new object();
 
             _sessionFactory = Fluently.Configure()
-                .Database(MySQLConfiguration.Standard.ConnectionString($"Server=localhost;Port=3306;Database=books_everywhere;user=root;password=12345;Pooling=true;CharSet=utf8;"))
-                //.Mappings(m => m.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()))
+                .Database(MySQLConfiguration.Standard.ConnectionString($"Server=books-everywhere.cdplvfbgl805.us-east-1.rds.amazonaws.com;Port=3306;Database=innodb;user=admin;password=BoOkSEvErYwHeRe576&;Pooling=true;CharSet=utf8;"))
+                //.Mappings(x => x.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()))
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<User>())
                 .BuildSessionFactory();
         }
 

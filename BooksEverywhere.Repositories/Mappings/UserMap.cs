@@ -8,7 +8,7 @@ namespace BooksEverywhere.Repositories.Mappings
         public UserMap()
         {
             Table("user");
-            Id(x => x.IdUser, "id");
+            Id(x => x.IdUser, "id").GeneratedBy.Identity();
             Map(x => x.UserName, "username").Not.Nullable();
             Map(x => x.Email, "email").Not.Nullable();
             Map(x => x.Name, "name").Nullable();

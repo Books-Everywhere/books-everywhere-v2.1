@@ -102,6 +102,9 @@
             "projectReferences": {
               "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj": {
                 "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.Models\\BooksEverywhere.Models.csproj"
+              },
+              "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj": {
+                "projectPath": "D:\\Projetos\\books-everywhere-v2.1\\BooksEverywhere.ViewModels\\BooksEverywhere.ViewModels.csproj"
               }
             }
           }
