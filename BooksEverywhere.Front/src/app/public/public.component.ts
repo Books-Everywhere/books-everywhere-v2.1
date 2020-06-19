@@ -49,6 +49,10 @@ export class PublicComponent implements OnInit {
     this.user.username = this.username.value;
     this.user.password = this.password.value;
     const authValues = { Username: this.user.username, Password: this.user.password };
+    // this.tokenService.auth(authValues).subscribe(token => {
+    //   this.helpers.setToken(token);
+    //   this.router.navigate(['/dashboard']);
+    // });
     this.tokenService.auth(authValues).subscribe(token => {
       this.helpers.setToken(token);
       this.router.navigate(['/dashboard']);

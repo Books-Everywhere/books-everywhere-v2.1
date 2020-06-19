@@ -13,8 +13,8 @@ namespace BooksEverywhere.Models.ApplicationDbContext
             // 'ef migrations remove'
             #endregion
 
-            //optionsBuilder.UseMySql($"Server=localhost;Port=3306;Database=books_everywhere;user=root;password=12345;Pooling=true;CharSet=utf8;");
-            optionsBuilder.UseMySql($"Server=books-everywhere.cdplvfbgl805.us-east-1.rds.amazonaws.com;Port=3306;Database=innodb;user=admin;password=BoOkSEvErYwHeRe576&;Pooling=true;CharSet=utf8;");
+            optionsBuilder.UseMySql($"Server=localhost;Port=3306;Database=books_everywhere;user=root;password=12345;Pooling=true;CharSet=utf8;");
+            //optionsBuilder.UseMySql($"Server=books-everywhere.cdplvfbgl805.us-east-1.rds.amazonaws.com;Port=3306;Database=innodb;user=admin;password=BoOkSEvErYwHeRe576&;Pooling=true;CharSet=utf8;");
         }
     }
 }

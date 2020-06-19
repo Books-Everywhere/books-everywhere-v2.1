@@ -89,27 +89,32 @@ namespace BooksEverywhere.Web.Api.Controllers
         [Route("login")]
         public async Task<object> Login([FromBody] UserViewModel model)
         {
-            var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
-
-            if (result.Succeeded)
+            try
             {
                 var findUserByUsername = _userService.GetByUsername(model.UserName);
-                var userIdentity = await _userManager.FindByEmailAsync(findUserByUsername.Email);
-                return await GenerateJwtToken(userIdentity.Email, userIdentity);
-            }
-            else
-            {
-                var findUserByEmail = await _userManager.FindByEmailAsync(model.UserName);
-                if (findUserByEmail.Email == null)
-                    throw new ApplicationException("INVALID_LOGIN_ATTEMPT");
-                result = await _signInManager.PasswordSignInAsync(findUserByEmail.UserName, model.Password, false, false);
-                if (result.Succeeded)
+                if (findUserByUsername != null)
                 {
-                    var appUser = _userManager.Users.SingleOrDefault(r => r.Email == model.UserName);
-                    return await GenerateJwtToken(model.UserName, appUser);
+                    await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
+                    var userIdentity = await _userManager.FindByEmailAsync(findUserByUsername.Email);
+                    return await GenerateJwtToken(userIdentity.Email, userIdentity);
+                }
+                else
+                {
+                    var findUserByEmail = await _userManager.FindByEmailAsync(model.UserName);
+                    if (findUserByEmail != null)
+                    {
+                        await _signInManager.PasswordSignInAsync(findUserByEmail.UserName, model.Password, false, false);
+                        var userIdentity = _userManager.Users.SingleOrDefault(r => r.Email == model.UserName);
+                        return await GenerateJwtToken(model.UserName, userIdentity);
+                    }
+                    else { throw new ApplicationException("INVALID_LOGIN_ATTEMPT"); }
                 }
             }
-            throw new ApplicationException("INVALID_LOGIN_ATTEMPT");
+            catch (Exception e)
+            {
+                BadRequest();
+                throw new ApplicationException("INVALID_LOGIN_ATTEMPT");
+            }
         }
         #endregion
 

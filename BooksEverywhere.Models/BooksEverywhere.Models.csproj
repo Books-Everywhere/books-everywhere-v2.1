@@ -15,4 +15,10 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\BooksEverywhere.Repositories\Infra\MySql.Data.DLL</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

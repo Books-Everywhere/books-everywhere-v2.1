@@ -31,7 +31,7 @@ namespace BooksEverywhere.Services
         }
         #endregion
 
-        #region GetByUserName
+        #region GetByUserName 
         public User GetByUsername(string username)
         {
             return _userRepository.GetByUsername(username);
