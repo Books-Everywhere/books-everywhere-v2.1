@@ -91,11 +91,11 @@ namespace BooksEverywhere.Web.Api.Controllers
         {
             try
             {
-                var findUserByUsername = _userService.GetByUsername(model.UserName);
+                var findUserByUsername = _userManager.FindByNameAsync(model.UserName);
                 if (findUserByUsername != null)
                 {
                     await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
-                    var userIdentity = await _userManager.FindByEmailAsync(findUserByUsername.Email);
+                    var userIdentity = await _userManager.FindByEmailAsync(findUserByUsername.Result.Email);
                     return await GenerateJwtToken(userIdentity.Email, userIdentity);
                 }
                 else

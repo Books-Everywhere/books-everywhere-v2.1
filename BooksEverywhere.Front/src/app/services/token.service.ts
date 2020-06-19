@@ -26,9 +26,7 @@ export class TokenService extends BaseService {
     //     );
     // }
 
-    private getToken(body: any): Observable<any> {
-        return this.http.post<any>(this.pathAPI + 'user/login', body, super.header()).pipe(
-            catchError(super.handleError)
-        );
+    private getToken(body: any) {
+        return this.http.post<any>(this.pathAPI + 'user/login', body, super.header()).subscribe(res => console.log(res));
     }
 }

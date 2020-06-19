@@ -29,9 +29,7 @@ export class Helpers {
             window.localStorage['token'] === '') {
             return '';
         }
-
         let obj = JSON.parse(window.localStorage['token']);
-
         return obj.token;
     }
 

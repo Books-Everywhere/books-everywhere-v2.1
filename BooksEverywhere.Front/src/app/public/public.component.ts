@@ -53,7 +53,7 @@ export class PublicComponent implements OnInit {
     //   this.helpers.setToken(token);
     //   this.router.navigate(['/dashboard']);
     // });
-    this.tokenService.auth(authValues).subscribe(token => {
+    this.tokenService.auth(authValues).then(token => {
       this.helpers.setToken(token);
       this.router.navigate(['/dashboard']);
     });
