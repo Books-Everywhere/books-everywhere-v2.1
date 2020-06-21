@@ -2,15 +2,7 @@
   .section-header .section-title {
     font-size: 22px;
   }
-  #hero-area .contents {
-    padding: 148px 0 48px;
-  }
-  #hero-area .contents h1 {
-    font-size: 26px;
-  }
-  .intro-img {
-    padding: 130px 0;
-  }
+
   #video-area .contents h1 {
     font-size: 32px;
     line-height: 48px;
@@ -151,12 +143,6 @@
   .call-action .cta-trial h3 {
     font-size: 22px;
   }
-  #hero-area .contents {
-    padding: 100px 0 20px;
-  }
-  #hero-area .contents h1 {
-    font-size: 18px;
-  }
   .contents .head-title {
     font-size: 18px !important;
   }
@@ -166,9 +152,6 @@
   }
   .mainmenu-area .menu-button {
     display: none;
-  }
-  .intro-img {
-    padding: 100px 0;
   }
   .menu-wrap {
     padding: 10px;

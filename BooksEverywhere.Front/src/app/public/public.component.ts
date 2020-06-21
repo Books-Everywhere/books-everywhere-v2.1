@@ -44,19 +44,17 @@ export class PublicComponent implements OnInit {
     }
   }
 
-  // login in progress
   login(): void {
     this.user.username = this.username.value;
     this.user.password = this.password.value;
-    const authValues = { Username: this.user.username, Password: this.user.password };
-    // this.tokenService.auth(authValues).subscribe(token => {
+    // const authValues = { Username: this.user.username, Password: this.user.password };
+    // this.tokenService.getToken(authValues).subscribe(token => {
+    //   console.log(token);
     //   this.helpers.setToken(token);
     //   this.router.navigate(['/dashboard']);
     // });
-    this.tokenService.auth(authValues).then(token => {
-      this.helpers.setToken(token);
-      this.router.navigate(['/dashboard']);
-    });
+    const token = this.tokenService.getToken(this.user);
+    console.log(token);
   }
 
   // this is the logout:

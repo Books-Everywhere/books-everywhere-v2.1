@@ -6,19 +6,16 @@ import { catchError, map, tap } from 'rxjs/operators';
 import { AppConfig } from '../config/config';
 import { BaseService } from './base.service';
 import { Helpers } from '../helpers/helpers';
+import { User } from '../models/user';
 
 @Injectable()
 
 export class TokenService extends BaseService {
+
     private pathAPI = this.config.setting['PathAPI'];
     public errorMessage: string;
 
     constructor(private http: HttpClient, private config: AppConfig, helper: Helpers) { super(helper); }
-
-    auth(data: any): any {
-        let body = JSON.stringify(data);
-        return this.getToken(body);
-    }
 
     // private getToken(body: any): Observable<any> {
     //     return this.http.post<any>(this.pathAPI + 'user/login', body, super.header()).pipe(
@@ -26,7 +23,7 @@ export class TokenService extends BaseService {
     //     );
     // }
 
-    private getToken(body: any) {
-        return this.http.post<any>(this.pathAPI + 'user/login', body, super.header()).subscribe(res => console.log(res));
+    public getToken(body: User){
+        return this.http.post<User>(this.pathAPI + 'user/login', body).subscribe(res => console.log(res));
     }
 }
